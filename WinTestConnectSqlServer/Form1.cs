@@ -24,13 +24,7 @@ namespace WinTestConnectSqlServer
             {
                 string connetionString;
                 SqlConnection cnn;
-                // connetionString = @"Data Source=WIN-3VU0IUD67IK;Initial Catalog=Demodb;User ID=sa;Password=demol23";
-                // localhost\sqlexpress
                 connetionString = @"Data Source=WIN-3VU0IUD67IK\SQLEXPRESS;Initial Catalog=Agenda;User ID=sa;Password=Flpvrgs1966";
-                //connetionString = @"Data Source=WIN-3VU0IUD67IK\SQLEXPRESS;Integrated Security = SSPI;Initial Catalog=Agenda;";
-                //Integrated Security = SSPI; Initial Catalog = pubs
-                // connetionString = @"Data Source=tcp:10.25.1.56;Initial Catalog=Agenda;User ID=sa;Password=Flpvrgs1966";
-
                 cnn = new SqlConnection(connetionString);
                 cnn.Open();
                 MessageBox.Show("Connection Open  !");
